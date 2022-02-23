@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --hero-footer-background: #2f303a;
   --team-section-button-color: #f5f4fa;
+  --primary-icon-color: #afb1b8;
 }
 /* colors
 #212121-title
@@ -13,6 +14,7 @@
 #757575-text
 #F5F4FA-team section background
 #2F303A-hero and footer background
+#AFB1B8-primary icon color
 
 
 */
@@ -62,6 +64,10 @@ ul {
   display: flex;
   margin-left: auto;
 }
+.contact-icon {
+  margin-right: 10px;
+  fill: #757575;
+}
 .contact {
   margin-right: 50px;
 }
@@ -101,10 +107,16 @@ ul {
 .contact-list .link:focus {
   color: var(--accent-color);
 }
+.contact-icon:hover,
+.contact-icon:focus {
+  fill: #2196f3;
+}
 .hero {
-  background-image: url(../images/background-images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background-images/hero.jpg);
   background-color: var(--hero-footer-background);
   max-width: 1600px;
+  border: 1px solid #000;
   padding-bottom: 94px;
   padding: 200px 0px 200px 0px;
   margin-right: auto;
@@ -159,6 +171,7 @@ ul {
   margin-bottom: 50px;
 }
 .subtitle {
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -202,11 +215,39 @@ img {
   display: flex;
   list-style: none;
 }
+.team-card {
+  background-color: var(--main-background-color);
+  margin-right: 30px;
+}
 .team-lists-item {
   margin-right: 30px;
 }
 .team-lists-item:last-child {
   margin-right: 0;
+}
+.text-team {
+  margin-bottom: 16px;
+}
+.social-list {
+  list-style: none;
+}
+.social-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 44px;
+  height: 44px;
+  background-color: var(--main-background-color);
+  fill: var(--primary-icon-color);
+  cursor: pointer;
+}
+.social-icon:hover,
+.social-icon:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  fill: var(--main-background-color);
 }
 .team-subtitle {
   padding-top: 30px;
