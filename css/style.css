@@ -216,6 +216,7 @@ img {
   list-style: none;
 }
 .team-card {
+  display: flex;
   background-color: var(--main-background-color);
   margin-right: 30px;
 }
@@ -229,7 +230,13 @@ img {
   margin-bottom: 16px;
 }
 .social-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   list-style: none;
+}
+.social-item:not(:last-child){
+  margin-right: 10px;
 }
 .social-icon {
   display: flex;
@@ -242,6 +249,9 @@ img {
   background-color: var(--main-background-color);
   fill: var(--primary-icon-color);
   cursor: pointer;
+}
+.icon{
+  display: flex;
 }
 .social-icon:hover,
 .social-icon:focus {
