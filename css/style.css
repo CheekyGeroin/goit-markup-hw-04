@@ -230,69 +230,35 @@ img {
 .text-team {
   margin-bottom: 16px;
 }
-.social-list {
+.social-list{
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   list-style: none;
 }
 .social-item:not(:last-child){
   margin-right: 10px;
 }
-.thumb{
+.team-link{
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
   width: 44px;
   height: 44px;
-  background-color: var(--main-background-color);
-  fill: var(--primary-icon-color);
+  color: var(--primary-icon-color);
   cursor: pointer;
 }
-.thumb>svg{
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-/* .social-icon{
-  display: flex;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-} */
-/* .social-icon {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  width: 44px;
-  height: 44px;
-  background-color: var(--main-background-color);
-  fill: var(--primary-icon-color);
-  cursor: pointer;
-} */
-/* .icon{
-  width: 20px;
-  height: 20px;
-} */
-/* .icon{
-  display: flex;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-} */
-.social-icon:hover,
-.social-icon:focus {
+.team-link:hover,.team-link:focus{
   background-color: var(--accent-color);
   border-radius: 50%;
-  fill: var(--main-background-color);
+  color: var(--main-background-color);
+}
+/* .team-link>.social-icon{
+  justify-content: center;
+  align-items: center;
+} */
+.social-icon{
+  fill: currentColor;
 }
 .team-subtitle {
   padding-top: 30px;
@@ -396,6 +362,16 @@ img {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+.fsocial-link{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-color: red;
+}
+.fsocial-icon{
+  width: 20px;
+  height: 20px;
 }
 /* Портфолио */
 .porfolio-section {
