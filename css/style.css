@@ -290,17 +290,39 @@ img {
   list-style: none;
 }
 .company-item{
-  border:1px solid var(--primary-icon-color);
+  display: flex;
+  /* border: 1px solid var(--primary-icon-color); */
   margin-right: 30px;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+}
+.company-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
+  padding: 32px 16px;
+  color: var(--primary-icon-color);
+  border: 1px solid var(--primary-icon-color);
+  border-radius: 4px;
+}
+/* .company-item:hover,.company-item:focus{
+  border: 1px solid var(--accent-color);
+}
+.company-link:hover,.company-link:focus{
+  color: var(--accent-color);
+} */
+.company-link:hover,
+.company-link:focus{
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
 }
 .company-icon{
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: currentColor;
 }
 .company-item:last-child{
   margin-right: 0px;
