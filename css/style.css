@@ -214,15 +214,15 @@ img {
 .team-lists {
   display: flex;
   list-style: none;
+
 }
-.team-card {
+
+.team-lists-item {
+  margin-right: 30px;
   display: flex;
   background-color: var(--main-background-color);
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.team-lists-item {
-  margin-right: 30px;
 }
 .team-lists-item:last-child {
   margin-right: 0;
@@ -328,19 +328,32 @@ img {
   margin-right: 0px;
 }
 .footer {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
   padding: 60px 0 60px 0;
   background-color: var(--hero-footer-background);
   max-width: 1600px;
-  margin-right: auto;
+  margin-right: auto; 
   margin-left: auto;
 }
+.footer-list{
+  display: flex;
+  list-style: none;
+}
+/* .footer>.container{
+  max-width: 260px;
+  margin: 0 ;
+  margin-left: 150px;
+  
+} */
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
   color: var(--main-background-color);
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 26px; 
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -373,10 +386,14 @@ img {
 .contact-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.container.footer{
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
+.social{  
+  /* flex-wrap: wrap;
+  width: 206px;
+  height: 80px;
+   padding: 0 15px; */
+  margin-top: 15px ;
+  margin-left: 70px;
+  margin-right: auto;
   padding: 0;
 }
 .section-title.footer{

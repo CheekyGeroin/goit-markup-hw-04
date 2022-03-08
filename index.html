@@ -128,8 +128,8 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
         <ul class="team-lists">
-          <div class="team-card">
-            <li class="team-lists-item">
+          <li class="team-lists-item">
+            <div class="team-card">
               <img class="img" src="./images/team/igor.jpg" alt="Игорь Демьяненко" width="270" height="260" />
               <div class="team-subtitle">
                 <h3 class="subtitle-team">Игорь Демьяненко</h3>
@@ -165,11 +165,11 @@
                   </li>
                 </ul>
               </div>
-            </li>
-          </div>
-          <div class="team-card">
-            <li class="team-lists-item">
-              <img class="img" src="./images/team/olga.jpg" alt="Ольга Репина" width="270" height="260" />
+            </div>
+          </li>
+          <li class="team-lists-item">
+            <div class="team-card">
+                <img class="img" src="./images/team/olga.jpg" alt="Ольга Репина" width="270" height="260" />
               <div class="team-subtitle">
                 <h3 class="subtitle-team">Ольга Репина</h3>
                 <p lang="en" class="text-team">Frontend Developer</p>
@@ -204,11 +204,11 @@
                   </li>
                 </ul>
               </div>
-            </li>
-          </div>
-          <div class="team-card">
-            <li class="team-lists-item">
-              <img class="img" src="./images/team/nikolay.jpg" alt="Николай Тарасов" width="270" height="260" />
+            </div>
+          </li>
+          <li class="team-lists-item">
+            <div class="team-card">
+                <img class="img" src="./images/team/nikolay.jpg" alt="Николай Тарасов" width="270" height="260" />
               <div class="team-subtitle">
                 <h3 class="subtitle-team">Николай Тарасов</h3>
                 <p lang="en" class="text-team">Marketing</p>
@@ -243,11 +243,11 @@
                   </li>
                 </ul>
               </div>
-            </li>
-          </div>
-          <div class="team-card">
-            <li class="team-lists-item">
-              <img class="img" src="./images/team/michael.jpg" alt="Михаил Ермаков" width="270" height="260" />
+            </div>
+          </li>
+          <li class="team-lists-item">
+            <div class="team-card">
+                <img class="img" src="./images/team/michael.jpg" alt="Михаил Ермаков" width="270" height="260" />
               <div class="team-subtitle">
                 <h3 class="subtitle-team">Михаил Ермаков</h3>
                 <p lang="en" class="text-team">UI Designer</p>
@@ -282,8 +282,8 @@
                   </li>
                 </ul>
               </div>
-            </li>
-          </div>
+            </div>
+          </li>
         </ul>
         </div>
       </section>
@@ -340,59 +340,64 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer">
-        <h2 class="section-title footer">Присоединяйтесь</h2>
-        <ul class="footer-social-list">
-          <li class="fsocial-item">
-            <a class="fsocial-link" href="">
-              <svg class="fsocial-icon" width="20" height="20">
-                <use href="./images/icon.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="fsocial-item">
-            <a class="fsocial-link" href="">
-              <svg class="fsocial-icon" width="20" height="20">
-                <use href="./images/icon.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="fsocial-item">
-            <a class="fsocial-link" href="">
-              <svg class="fsocial-icon" width="20" height="20">
-                <use href="./images/icon.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="fsocial-item">
-            <a class="fsocial-link" href="">
-              <svg class="fsocial-icon" width="20" height="20">
-                <use href="./images/icon.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="container ">
-        <a href="./index.html" class="footer-logo" lang="en">
-          <span class="logo-color">Web</span>Studio</a
-        >
-        <address class="address">
-          <ul class="footer-contact-list">
-            <li class="contact-list-item">
-              <a
-                class="address-link"
-                href="https://goo.gl/maps/UDnoedodPh5Yinr3A"
-                target="_blank"
-                rel="noopener norefferer nofollow"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
+      <ul class="footer-list container">
+        <li class="footer-item">
+          <div class=" ">
+          <a href="./index.html" class="footer-logo" lang="en">
+            <span class="logo-color">Web</span>Studio</a
+          >
+          <address class="address">
+            <ul class="footer-contact-list">
+              <li class="contact-list-item">
+                <a
+                  class="address-link"
+                  href="https://goo.gl/maps/UDnoedodPh5Yinr3A"
+                  target="_blank"
+                  rel="noopener norefferer nofollow"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="contact-list-item"><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
+              <li class="contact-list-item"><a class="footer-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+      </li>
+        <li class="footer-item">
+          <div class=" social ">
+          <h2 class="section-title footer">Присоединяйтесь</h2>
+          <ul class="footer-social-list">
+            <li class="fsocial-item">
+              <a class="fsocial-link" href="">
+                <svg class="fsocial-icon" width="20" height="20">
+                  <use href="./images/icon.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="contact-list-item"><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
-            <li class="contact-list-item"><a class="footer-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            <li class="fsocial-item">
+              <a class="fsocial-link" href="">
+                <svg class="fsocial-icon" width="20" height="20">
+                  <use href="./images/icon.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="fsocial-item">
+              <a class="fsocial-link" href="">
+                <svg class="fsocial-icon" width="20" height="20">
+                  <use href="./images/icon.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="fsocial-item">
+              <a class="fsocial-link" href="">
+                <svg class="fsocial-icon" width="20" height="20">
+                  <use href="./images/icon.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </address>
-      </div>
+        </div></li>
+      </ul>
     </footer>
   </body>
 </html>
