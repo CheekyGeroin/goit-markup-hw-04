@@ -89,15 +89,17 @@ ul {
   text-decoration: none;
 }
 .link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  
 }
-.link:hover,
-.link:focus {
+.link:hover,.link:focus{
   color: var(--accent-color);
 }
 .contact-list .link {
@@ -106,18 +108,19 @@ ul {
 .contact-list .link:hover,
 .contact-list .link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
-.contact-icon:hover,
-.contact-icon:focus {
-  fill: #2196f3;
+.contact-icon{
+  fill: currentColor;
 }
 .hero {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/background-images/hero.jpg);
   background-color: var(--hero-footer-background);
+  background-position: center ;
+  background-size:cover ;
+  background-repeat: no-repeat;
   max-width: 1600px;
-  border: 1px solid #000;
-  padding-bottom: 94px;
   padding: 200px 0px 200px 0px;
   margin-right: auto;
   margin-left: auto;
@@ -188,6 +191,15 @@ ul {
 }
 .lists-item:last-child {
   margin-right: 0;
+}
+.div-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color:var(--team-section-button-color);
+  border-radius: 4px;
 }
 .work-section {
   padding-top: 0;
@@ -302,7 +314,6 @@ img {
   align-items: center;
   width: 170px;
   height: 92px;
-  padding: 32px 16px;
   color: var(--primary-icon-color);
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
@@ -328,25 +339,18 @@ img {
   margin-right: 0px;
 }
 .footer {
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
   padding: 60px 0 60px 0;
   background-color: var(--hero-footer-background);
-  max-width: 1600px;
-  margin-right: auto; 
-  margin-left: auto;
 }
 .footer-list{
   display: flex;
   list-style: none;
 }
-/* .footer>.container{
-  max-width: 260px;
-  margin: 0 ;
-  margin-left: 150px;
+.footer-container{
+ display: flex;
+ align-items: baseline;
   
-} */
+}
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -387,14 +391,14 @@ img {
   margin-bottom: 9px;
 }
 .social{  
-  /* flex-wrap: wrap;
-  width: 206px;
-  height: 80px;
-   padding: 0 15px; */
-  margin-top: 15px ;
   margin-left: 70px;
-  margin-right: auto;
-  padding: 0;
+}
+.footer-title{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--main-background-color);
 }
 .section-title.footer{
   padding: 0;
